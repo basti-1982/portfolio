@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./styles/main.scss ./styles/main-style.css",
+    "watch": "sass --watch ./styles/main.scss ./styles/main-style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basti-1982/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basti-1982/portfolio/issues"
+  },
+  "homepage": "https://github.com/basti-1982/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}
