@@ -1,8 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap');
 // Roboto Mono, Teko, Josefin Sans
 
+@import "colors";
+@import "header";
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: Josefin Sans, sans-serif;
+}
+
+main {
+    padding-top: 150px;
+    min-height: 100vh;
+}
+
+.banner {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 0 auto;
+
+    .banner__heading {
+        padding-bottom: 55px;
+        text-align: center;
+    }
+
+    .banner__text {
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .banner__img {
+        padding-bottom: 50px;
+        height: auto;
+        width: 75%;       
+        align-self: center;
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width: 576px) {
+    header span {
+        font-size: 30px;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li {
+        font-size: 20px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .banner__heading {
+        font-size: 40px;
+    }
+
+    .banner__text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    header span {
+        font-size: 34px;
+    }
+
+    header nav ul li {
+        font-size: 24px;
+    }
+
+    .banner__heading {
+        font-size: 44px;
+    }
+
+    .banner__text {
+        font-size: 24px;
+    }
 }
