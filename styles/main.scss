@@ -23,9 +23,11 @@ main {
     min-height: 100vh;
 }
 
+// start part1
+
 .banner {
     width: 80%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,13 +47,82 @@ main {
     }
 
     .banner__img {
-        padding-bottom: 50px;
         height: auto;
         width: 75%;       
         align-self: center;
-        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
     }
 }
+
+// start part2
+
+.performance {
+    background-color: $amber;
+    width: 100%;
+}
+
+.performance__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .performance__heading {
+        text-align: center;
+        padding-top: 200px;
+    }
+
+    .performance__text {
+        width: 60%;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 250px;
+    }
+}
+
+// start part3
+
+// .card {
+//     position: sticky;
+//     top: 150px;
+// }
+
+.sticky {
+    position: relative;
+    top: -100px;
+}
+
+.card__container {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+
+    .card__padding {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .card__heading {
+        font-size: 20px;
+        padding-top: 80px;
+    }
+
+    .card__languages, 
+    .card__tools_head {
+        color: $azure;
+    }
+
+}
+
 
 
 @media (min-width: 576px) {
@@ -75,7 +146,11 @@ main {
         font-size: 40px;
     }
 
-    .banner__text {
+    .performance__heading {
+        font-size: 28px;
+    }
+
+    .p_text {
         font-size: 20px;
     }
 }
@@ -93,7 +168,11 @@ main {
         font-size: 44px;
     }
 
-    .banner__text {
+    .performance__heading {
+        font-size: 32px;
+    }
+
+    .p_text {
         font-size: 24px;
     }
 }
