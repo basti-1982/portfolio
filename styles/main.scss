@@ -19,7 +19,7 @@ html {
 }
 
 main {
-    padding-top: 150px;
+    padding-top: 250px;
     min-height: 100vh;
 }
 
@@ -37,21 +37,32 @@ main {
     margin: 0 auto;
 
     .banner__heading {
-        padding-bottom: 55px;
+        padding-bottom: 100px;
         text-align: center;
     }
 
     .banner__text {
-        padding-bottom: 60px;
+        padding-bottom: 100px;
         text-align: center;
     }
 
+    // .banner__img {
+    //     height: auto;
+    //     width: 85%;       
+    //     align-self: center;
+    //     border-radius: 10px 10px 0 0;
+    //     }
+
     .banner__img {
-        height: auto;
-        width: 75%;       
+        height: 500px;
+        width: 85%;       
         align-self: center;
         border-radius: 10px 10px 0 0;
-    }
+        background-image: url('/portfolio/picture/tisch.jpg'); // Setzen Sie hier den Pfad zu Ihrem Bild ein
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }    
 }
 
 // start part2
@@ -69,14 +80,14 @@ main {
 
     .performance__heading {
         text-align: center;
-        padding-top: 200px;
+        padding-top: 300px;
     }
 
     .performance__text {
         width: 60%;
         text-align: center;
         padding-top: 25px;
-        padding-bottom: 250px;
+        padding-bottom: 450px;
     }
 }
 
@@ -89,7 +100,7 @@ main {
 
 .sticky {
     position: relative;
-    top: -100px;
+    top: -150px;
 }
 
 .card__container {
@@ -97,7 +108,7 @@ main {
     // justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 800px;
+    height: 700px;
     width: 80%;
     text-align: center;
     margin: auto;
@@ -118,23 +129,132 @@ main {
 
     .card__languages, 
     .card__tools_head {
-        color: $azure;
+        color: $blue-violet;
+    }
+
+    .card__list,
+    .card__speaks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px 0 10px 0;
+
+        li {
+            padding: 10px 0 10px 0;
+        }
     }
 
 }
 
+// start part4
+
+.projects {
+        background-color: $amber;
+        width: 100%;
+
+        .projects__heading {
+            padding-top: 150px;
+            padding-bottom: 300px;
+            text-align: center;
+        }
+    
+}
+// start part5
+
+.project-cards {
+    position: relative;
+    // top: -237.5px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: grid;
+    gap: 25px; 
+    padding: 25px 50px 25px 50px;
+    border: none;
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  }
+// start part6
+
+.contact {
+    background-color: $amber;
+    width: 100%;
+
+    .contact__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+        .contact__heading {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .contact__text {
+            text-align: center;
+            padding-bottom: 50px;
+            width: 50%;
+        }
+
+        .contact__form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0 10px 0;
+                border: none;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: $blue-violet;
+                color: white;
+                cursor: pointer;
+            }
+
+            button {
+                width: 30%;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: $blue-violet;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
 
 
 @media (min-width: 576px) {
     header span {
-        font-size: 30px;
+        font-size: 32px;
     }
 
-    header nav ul {
+    .dropdown__list {
         display: flex;
     }
 
-    header nav ul li {
+    .dropdown__list li {
         font-size: 20px;
     }
 
@@ -153,14 +273,20 @@ main {
     .p_text {
         font-size: 20px;
     }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: 200px; 
+        gap: 25px; 
+    }
 }
 
 @media (min-width: 768px) {
     header span {
-        font-size: 34px;
+        font-size: 36px;
     }
 
-    header nav ul li {
+    .dropdown__list li {
         font-size: 24px;
     }
 
@@ -174,5 +300,9 @@ main {
 
     .p_text {
         font-size: 24px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); 
     }
 }

@@ -1,4 +1,4 @@
-{
+npm instanpm run {
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
@@ -21,5 +21,6 @@
   "homepage": "https://github.com/basti-1982/portfolio#readme",
   "dependencies": {
     "sass": "^1.75.0"
-  }
+  },
+  "devDependencies": {}
 }

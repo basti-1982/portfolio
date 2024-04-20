@@ -6,9 +6,10 @@ header {
     align-items: center;
     height: 100px;
     width: 100%;
-    // position: fixed;
-    // top: 0;
+    position: fixed;
+    top: 0;
     background: $gradient-left;
+    z-index: 1;
 
     .dropbtn {
         background-color:#FFEDE1;
@@ -60,7 +61,7 @@ header {
         } 
     }
 
-    ul {
+    .dropdown__list {
         list-style: none;
         display: none;
 
