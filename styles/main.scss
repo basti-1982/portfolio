@@ -1,308 +1,297 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap");
 // Roboto Mono, Teko, Josefin Sans
 
 @import "colors";
 @import "header";
-
-
-
-
+@import "footer";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: Josefin Sans, sans-serif;
+  font-family: Josefin Sans, sans-serif;
 }
 
 main {
-    padding-top: 250px;
-    min-height: 100vh;
+  padding-top: 250px;
+  min-height: 100vh;
 }
 
 // start part1
 
 .banner {
-    width: 80%;
-    // height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    // margin-left: auto;
-    // margin-right: auto;
-    margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 
-    .banner__heading {
-        padding-bottom: 100px;
-        text-align: center;
-    }
+  .banner__heading {
+    padding-bottom: 100px;
+    text-align: center;
+  }
 
-    .banner__text {
-        padding-bottom: 100px;
-        text-align: center;
-    }
+  .banner__text {
+    padding-bottom: 100px;
+    text-align: center;
+  }
 
-    // .banner__img {
-    //     height: auto;
-    //     width: 85%;       
-    //     align-self: center;
-    //     border-radius: 10px 10px 0 0;
-    //     }
-
-    .banner__img {
-        height: 500px;
-        width: 85%;       
-        align-self: center;
-        border-radius: 10px 10px 0 0;
-        background-image: url('/portfolio/picture/tisch.jpg'); // Setzen Sie hier den Pfad zu Ihrem Bild ein
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }    
+  .banner__img {
+    height: 500px;
+    width: 100%;
+    align-self: center;
+    border-radius: 10px 10px 0 0;
+    background-image: url("/portfolio/picture/tisch.jpg"); // Setzen Sie hier den Pfad zu Ihrem Bild ein
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 // start part2
 
 .performance {
-    background-color: $amber;
-    width: 100%;
+  background-color: $amber;
+  width: 100%;
 }
 
 .performance__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 
-    .performance__heading {
-        text-align: center;
-        padding-top: 300px;
-    }
+  .performance__heading {
+    text-align: center;
+    padding-top: 300px;
+  }
 
-    .performance__text {
-        width: 60%;
-        text-align: center;
-        padding-top: 25px;
-        padding-bottom: 450px;
-    }
+  .performance__text {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 450px;
+  }
 }
 
 // start part3
 
-// .card {
-//     position: sticky;
-//     top: 150px;
-// }
-
-.sticky {
-    position: relative;
-    top: -150px;
+.card__position {
+  position: relative;
+  top: -200px;
 }
 
 .card__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 700px;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+
+  .card__padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .card__heading {
+    font-size: 20px;
+    padding-top: 80px;
+  }
+
+  .card__languages,
+  .card__tools_head {
+    color: $blue-violet;
+  }
+
+  .card__list,
+  .card__speaks {
     display: flex;
-    // justify-content: center;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 700px;
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    padding: 0 20px 0 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+    list-style: none;
+    padding: 10px 0 10px 0;
 
-    .card__padding {
-        padding-top: 20px;
-        padding-bottom: 20px;
+    li {
+      padding: 10px 0 10px 0;
     }
-
-    .card__heading {
-        font-size: 20px;
-        padding-top: 80px;
-    }
-
-    .card__languages, 
-    .card__tools_head {
-        color: $blue-violet;
-    }
-
-    .card__list,
-    .card__speaks {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        list-style: none;
-        padding: 10px 0 10px 0;
-
-        li {
-            padding: 10px 0 10px 0;
-        }
-    }
-
+  }
 }
 
 // start part4
 
 .projects {
-        background-color: $amber;
-        width: 100%;
+  background-color: $amber;
+  width: 100%;
 
-        .projects__heading {
-            padding-top: 150px;
-            padding-bottom: 300px;
-            text-align: center;
-        }
-    
+  .projects__heading {
+    padding-top: 150px;
+    padding-bottom: 300px;
+    text-align: center;
+  }
 }
 // start part5
 
 .project-cards {
-    position: relative;
-    // top: -237.5px;
+  position: relative;
+  top: -100px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
 }
 
 .grid-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    display: grid;
-    gap: 25px; 
-    padding: 25px 50px 25px 50px;
-    border: none;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: grid;
+  gap: 25px;
+  padding: 25px 50px 25px 50px;
+  border: none;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+}
 
-  .grid-item {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-  }
+.grid-item {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+}
 // start part6
 
 .contact {
-    background-color: $amber;
-    width: 100%;
+  background-color: $amber;
+  width: 100%;
 
-    .contact__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 150px;
-        padding-bottom: 150px;
+  .contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 50px;
 
-        .contact__heading {
-            text-align: center;
-            padding-bottom: 50px;
-        }
-
-        .contact__text {
-            text-align: center;
-            padding-bottom: 50px;
-            width: 50%;
-        }
-
-        .contact__form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 50%;
-
-            input, textarea {
-                width: 100%;
-                padding: 10px;
-                margin: 10px 0 10px 0;
-                border: none;
-                border-radius: 5px;
-            }
-
-            input[type="submit"] {
-                background-color: $blue-violet;
-                color: white;
-                cursor: pointer;
-            }
-
-            button {
-                width: 30%;
-                padding: 10px;
-                margin: 10px;
-                border-radius: 5px;
-                border: none;
-                background-color: $blue-violet;
-                color: white;
-                font-weight: bold;
-            }
-        }
+    .contact__heading {
+      text-align: center;
+      padding-bottom: 50px;
     }
+
+    .contact__text {
+      text-align: center;
+      padding-bottom: 50px;
+      width: 50%;
+    }
+
+    .contact__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        border: none;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: $blue-violet;
+        color: white;
+        cursor: pointer;
+      }
+
+      .contact__button {
+        width: 30%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: $blue-violet;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
-
 @media (min-width: 576px) {
-    header span {
-        font-size: 32px;
-    }
+  header span {
+    font-size: 32px;
+  }
 
-    .dropdown__list {
-        display: flex;
-    }
+  .dropdown__list {
+    display: flex;
+  }
 
-    .dropdown__list li {
-        font-size: 20px;
-    }
+  .dropdown__list li {
+    font-size: 20px;
+  }
 
-    .dropdown {
-        display: none;
-    }
+  .dropdown {
+    display: none;
+  }
 
-    .banner__heading {
-        font-size: 40px;
-    }
+  .banner__heading {
+    font-size: 40px;
+  }
 
-    .performance__heading {
-        font-size: 28px;
-    }
+  .performance__heading {
+    font-size: 28px;
+  }
 
-    .p_text {
-        font-size: 20px;
-    }
+  .p_text {
+    font-size: 20px;
+  }
 
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); 
-        grid-auto-rows: 200px; 
-        gap: 25px; 
-    }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 25px;
+  }
 }
 
 @media (min-width: 768px) {
-    header span {
-        font-size: 36px;
-    }
+  header span {
+    font-size: 36px;
+  }
 
-    .dropdown__list li {
-        font-size: 24px;
-    }
+  .dropdown__list li {
+    font-size: 24px;
+  }
 
-    .banner__heading {
-        font-size: 44px;
-    }
+  .banner__heading {
+    font-size: 44px;
+  }
 
-    .performance__heading {
-        font-size: 32px;
-    }
+  .performance__heading {
+    font-size: 32px;
+  }
 
-    .p_text {
-        font-size: 24px;
-    }
+  .p_text {
+    font-size: 24px;
+  }
 
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr); 
-    }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

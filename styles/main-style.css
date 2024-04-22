@@ -69,6 +69,79 @@ header span {
   font-size: 14px;
   font-weight: bold;
 }
+.dropdown__list a {
+  text-decoration: none;
+}
+
+.nav-hvr-effect * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.nav-hvr-effect li {
+  overflow: hidden;
+}
+
+.nav-hvr-effect a {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-hvr-effect a:before,
+.nav-hvr-effect a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.nav-hvr-effect a:after {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: black;
+  white-space: nowrap;
+}
+
+.nav-hvr-effect li:hover a,
+.nav-hvr-effect .current a {
+  transform: translateY(100%);
+}
+
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #ffbe0b, #fb5607, #ff006e, #8338ec, #3a86ff);
+}
+
+.footer-nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-nav__list li {
+  margin: 0 10px;
+}
+
+.footer-nav__list i {
+  font-size: 30px;
+  color: white;
+}
+
+.footer-nav__list li {
+  margin-right: 50px;
+}
+
+.footer-nav__list li:last-child {
+  margin-right: 0;
+}
 
 * {
   padding: 0;
@@ -86,7 +159,7 @@ main {
 }
 
 .banner {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +176,7 @@ main {
 }
 .banner .banner__img {
   height: 500px;
-  width: 85%;
+  width: 100%;
   align-self: center;
   border-radius: 10px 10px 0 0;
   background-image: url("/portfolio/picture/tisch.jpg");
@@ -119,24 +192,26 @@ main {
 
 .performance__container {
   display: flex;
+  width: 60%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .performance__container .performance__heading {
   text-align: center;
   padding-top: 300px;
 }
 .performance__container .performance__text {
-  width: 60%;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 450px;
 }
 
-.sticky {
+.card__position {
   position: relative;
-  top: -150px;
+  top: -200px;
 }
 
 .card__container {
@@ -144,13 +219,13 @@ main {
   align-items: center;
   flex-direction: column;
   height: 700px;
-  width: 80%;
+  width: 60%;
   text-align: center;
   margin: auto;
   padding: 0 20px 0 20px;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
 .card__container .card__padding {
   padding-top: 20px;
@@ -189,16 +264,25 @@ main {
 
 .project-cards {
   position: relative;
+  top: -100px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
 }
 
 .grid-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   display: grid;
   gap: 25px;
   padding: 25px 50px 25px 50px;
   border: none;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
 
 .grid-item {
@@ -206,7 +290,7 @@ main {
   border-radius: 5px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
 
 .contact {
@@ -219,7 +303,7 @@ main {
   align-items: center;
   flex-direction: column;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 .contact .contact__container .contact__heading {
   text-align: center;
@@ -237,7 +321,8 @@ main {
   flex-direction: column;
   width: 50%;
 }
-.contact .contact__container .contact__form input, .contact .contact__container .contact__form textarea {
+.contact .contact__container .contact__form input,
+.contact .contact__container .contact__form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0 10px 0;
@@ -249,7 +334,7 @@ main {
   color: white;
   cursor: pointer;
 }
-.contact .contact__container .contact__form button {
+.contact .contact__container .contact__form .contact__button {
   width: 30%;
   padding: 10px;
   margin: 10px;

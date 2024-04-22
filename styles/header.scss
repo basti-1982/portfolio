@@ -70,5 +70,45 @@ header {
             font-size: 14px; 
             font-weight: bold;                      
         }    
-        
+
+        a {
+          text-decoration: none;
+        }
+    }
+
+
+    .nav-hvr-effect * {
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    
+    .nav-hvr-effect li {
+      overflow: hidden;
+    }
+    
+    .nav-hvr-effect a {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .nav-hvr-effect a:before,
+    .nav-hvr-effect a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    
+    .nav-hvr-effect a:after {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      content: attr(data-hover);
+      color: black;
+      white-space: nowrap;
+    }
+    
+    .nav-hvr-effect li:hover a,
+    .nav-hvr-effect .current a {
+      transform: translateY(100%);
     }

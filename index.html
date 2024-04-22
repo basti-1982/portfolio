@@ -11,44 +11,52 @@
   </head>
   <body>
     <header>
-      <span>Landing Side</span>
+      <span>Sebastian Lonczyk</span>
       <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div id="dropdownContent" class="dropdown-content">
-          <a href="#">Home</a>
-          <a href="#">About Me</a>
-          <a href="#">Links</a>
-          <a href="#">Why Not!</a>
+          <a href="#home">Home</a>
+          <a href="#about_me">About Me</a>
+          <a href="#projects">My Projects</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
       <nav>
-        <ul class="dropdown__list">
-          <li><a href="#"></a>Home</li>
-          <li><a href="#"></a>About Me</li>
-          <li><a href="#"></a>Links</li>
-          <li><a href="#"></a>Why Not!</li>
+        <ul class="dropdown__list nav-hvr-effect">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" data-hover="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about_me" class="nav-link" data-hover="About Me"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-hover="My Projects"
+              >My Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-hover="Contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!-- part1 -->
     <main>
-      <div>
+      <div  id="home">
         <div class="banner">
           <h1 class="banner__heading">Junior Web Developer</h1>
           <p class="banner__text p_text">
             I design and code beautifully simple things, and I love what I do.
           </p>
           <div class="banner__img"></div>
-          <!-- <img
-            class="banner__img"
-            src="./picture/tisch.jpg"
-            alt="coding workspace" /> -->
         </div>
       </div>
       <!-- part2 -->
       <div class="performance">
         <div class="performance__container">
-          <h2 class="performance__heading">
+          <h2 id="about_me" class="performance__heading">
             Hello, I'm Sebastian. Nice to meet you.
           </h2>
           <p class="performance__text p_text">
@@ -62,16 +70,15 @@
       </div>
       <!-- part3 -->
       <section class="card">
-        <div class="sticky">
+        <div class="card__position">
           <div>
             <div class="card__container">
-              <h3 class="card__heading ">Frontend Developer</h3>
+              <h3 class="card__heading">Frontend Developer</h3>
               <p class="card__text card__padding">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Officia, alias fuga. Natus soluta impedit nisi.
               </p>
               <h4 class="card__languages card__padding">Languages I speak:</h4>
-              <!-- <p class="card__speaks card__padding">HTML, CSS, Sass, Git, Javascript</p> -->
               <ul class="card__speaks card__padding">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -85,106 +92,77 @@
                 <li>Github</li>
                 <li>VS Code</li>
               </ul>
-              <!-- <p class="card__tools card__padding">Bootstrap <br />Github <br>VS Code <br></p> -->
             </div>
           </div>
         </div>
       </section>
-        <!-- part4 -->
-        <section class="projects">
-          <div class="projects__banner">
-              <h2 class="projects__heading">My Projects</h2>
-          </div>
+      <!-- part4 -->
+      <section id="projects" class="projects">
+        <div class="projects__banner">
+          <h2 class="projects__heading">
+            My Projects wird hübsch gemacht wenn projekte da sind
+          </h2>
+        </div>
       </section>
       <!-- part5 -->
       <section class="project-cards">
-          <div>
-              <div class="grid-container">
-                  <div class="grid-item">Projet 1</div>
-                  <div class="grid-item">Projet 2</div>
-                  <div class="grid-item">Projet 3</div>
-                  <div class="grid-item">Projet 4</div>
-                  <div class="grid-item">Projet 5</div>
-                  <div class="grid-item">Projet 6</div>
-              </div>
+        <div>
+          <div class="grid-container">
+            <div class="grid-item">Projet 1</div>
+            <div class="grid-item">Projet 2</div>
+            <div class="grid-item">Projet 3</div>
+            <div class="grid-item">Projet 4</div>
+            <div class="grid-item">Projet 5</div>
+            <div class="grid-item">Projet 6</div>
           </div>
+        </div>
       </section>
       <!-- part6 -->
       <form action="">
-          <div class="contact">
-              <div class="contact__container">
-                  <h2 class="contact__heading">Contact Me</h2>
-                  <p class="contact__text p_text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                      quam at suscipit itaque dolorum reiciendis. Alias natus cupiditate
-                      excepturi. Cupiditate consequuntur temporibus quasi, doloribus
-                      necessitatibus molestiae a voluptates. Similique, hic?
-                  </p>
-                  <div class="contact__form">
-                      <input type="text" placeholder="Name" />
-                      <input type="email" placeholder="Email" />
-                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                      <button class="c0ntact__button">Send</button>
-                  </div>
-              </div>
+        <div id="contact" class="contact">
+          <div class="contact__container">
+            <h2 class="contact__heading">Contact Me</h2>
+            <p class="contact__text p_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              quam at suscipit itaque dolorum reiciendis. Alias natus cupiditate
+              excepturi. Cupiditate consequuntur temporibus quasi, doloribus
+              necessitatibus molestiae a voluptates. Similique, hic?
+            </p>
+            <div class="contact__form">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message"></textarea>
+              <button class="contact__button">Send</button>
+            </div>
           </div>
-      </form>  
-  </main>
-  <footer></footer>
-</body>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <nav class="footer__nav">
+        <ul class="footer-nav__list">
+          <li>
+            <a href="https://github.com/basti-1982" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:sebastian.lonczyk@outlook.com" target="_blank"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
-
-
-
-<!-- .contact {
-  background-color: $amber;
-  width: 100%;
-
-  .contact__heading {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      text-align: center;
-  }
-
-  .contact__text {
-      width: 60%;
-      padding-bottom: 50px;
-      text-align: center;
-      margin: auto;
-  }
-
-  .contact__form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-bottom: 100px;
-
-      input {
-          width: 50%;
-          padding: 10px;
-          margin: 10px;
-          border-radius: 5px;
-          border: none;
-      }
-
-      textarea {
-          width: 50%;
-          padding: 10px;
-          margin: 10px;
-          border-radius: 5px;
-          border: none;
-      }
-
-      button {
-          width: 50%;
-          padding: 10px;
-          margin: 10px;
-          border-radius: 5px;
-          border: none;
-          background-color: $blue-violet;
-          color: white;
-          font-weight: bold;
-      }
-  }
-} -->
