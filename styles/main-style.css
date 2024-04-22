@@ -58,6 +58,7 @@ header .dropdown:hover .dropdown-content {
 }
 header span {
   font-size: 26px;
+  color: white;
 }
 
 .dropdown__list {
@@ -71,6 +72,7 @@ header span {
 }
 .dropdown__list a {
   text-decoration: none;
+  color: white;
 }
 
 .nav-hvr-effect * {
@@ -150,11 +152,10 @@ footer {
 }
 
 html {
-  font-family: Josefin Sans, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 main {
-  padding-top: 250px;
   min-height: 100vh;
 }
 
@@ -165,6 +166,7 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  padding-top: 250px;
 }
 .banner .banner__heading {
   padding-bottom: 100px;
@@ -179,7 +181,7 @@ main {
   width: 100%;
   align-self: center;
   border-radius: 10px 10px 0 0;
-  background-image: url("/portfolio/picture/tisch.jpg");
+  background-image: url("/picture/tisch.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

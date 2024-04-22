@@ -12,11 +12,10 @@
 }
 
 html {
-  font-family: Josefin Sans, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 main {
-  padding-top: 250px;
   min-height: 100vh;
 }
 
@@ -29,6 +28,7 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  padding-top: 250px;
 
   .banner__heading {
     padding-bottom: 100px;
@@ -45,7 +45,7 @@ main {
     width: 100%;
     align-self: center;
     border-radius: 10px 10px 0 0;
-    background-image: url("/portfolio/picture/tisch.jpg"); // Setzen Sie hier den Pfad zu Ihrem Bild ein
+    background-image: url("/picture/tisch.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
