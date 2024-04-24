@@ -116,6 +116,62 @@ header span {
 /* SCSS HSL */
 /* SCSS RGB */
 /* SCSS Gradient */
+.contact {
+  background-color: rgb(255, 190, 11);
+  width: 100%;
+}
+.contact .contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.contact .contact__container .contact__heading {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.contact .contact__container .contact__text {
+  text-align: center;
+  padding-bottom: 50px;
+  width: 50%;
+}
+.contact .contact__container .contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.contact .contact__container .contact__form input,
+.contact .contact__container .contact__form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.contact .contact__container .contact__form input[type=submit] {
+  background-color: rgb(131, 56, 236);
+  color: white;
+  cursor: pointer;
+}
+.contact .contact__container .contact__form .contact__button {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(131, 56, 236);
+  color: white;
+  font-weight: bold;
+}
+
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
 footer {
   height: 150px;
   display: flex;
@@ -230,10 +286,6 @@ main {
   background-color: white;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
-.card__container .card__padding {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .card__container .card__heading {
   font-size: 20px;
   padding-top: 80px;
@@ -253,6 +305,11 @@ main {
 .card__container .card__list li,
 .card__container .card__speaks li {
   padding: 10px 0 10px 0;
+}
+
+.card-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .projects {
@@ -288,7 +345,7 @@ main {
   display: grid;
   gap: 25px;
   padding: 25px 50px 25px 50px;
-  border: none;
+  border-radius: 10px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
 
@@ -298,58 +355,6 @@ main {
   padding: 20px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-}
-
-.contact {
-  background-color: rgb(255, 190, 11);
-  width: 100%;
-}
-.contact .contact__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 150px;
-  padding-bottom: 50px;
-}
-.contact .contact__container .contact__heading {
-  text-align: center;
-  padding-bottom: 50px;
-}
-.contact .contact__container .contact__text {
-  text-align: center;
-  padding-bottom: 50px;
-  width: 50%;
-}
-.contact .contact__container .contact__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-}
-.contact .contact__container .contact__form input,
-.contact .contact__container .contact__form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0 10px 0;
-  border: none;
-  border-radius: 5px;
-}
-.contact .contact__container .contact__form input[type=submit] {
-  background-color: rgb(131, 56, 236);
-  color: white;
-  cursor: pointer;
-}
-.contact .contact__container .contact__form .contact__button {
-  width: 30%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(131, 56, 236);
-  color: white;
-  font-weight: bold;
 }
 
 @media (min-width: 576px) {

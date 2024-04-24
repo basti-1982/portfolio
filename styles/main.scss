@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap");
 // Roboto Mono, Teko, Josefin Sans, Great Vibes, Dancing Script
 
 @import "colors";
 @import "header";
+@import "form";
 @import "footer";
 
 * {
@@ -100,11 +101,6 @@ main {
   background-color: white;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 
-  .card__padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
   .card__heading {
     font-size: 20px;
     padding-top: 80px;
@@ -127,6 +123,12 @@ main {
       padding: 10px 0 10px 0;
     }
   }
+}
+
+
+.card-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 // start part4
@@ -167,7 +169,7 @@ main {
   display: grid;
   gap: 25px;
   padding: 25px 50px 25px 50px;
-  border: none;
+  border-radius: 10px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
 
@@ -177,66 +179,6 @@ main {
   padding: 20px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-}
-// start part6
-
-.contact {
-  background-color: $amber;
-  width: 100%;
-
-  .contact__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 150px;
-    padding-bottom: 50px;
-
-    .contact__heading {
-      text-align: center;
-      padding-bottom: 50px;
-    }
-
-    .contact__text {
-      text-align: center;
-      padding-bottom: 50px;
-      width: 50%;
-    }
-
-    .contact__form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 50%;
-
-      input,
-      textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0 10px 0;
-        border: none;
-        border-radius: 5px;
-      }
-
-      input[type="submit"] {
-        background-color: $blue-violet;
-        color: white;
-        cursor: pointer;
-      }
-
-      .contact__button {
-        width: 30%;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-        border: none;
-        background-color: $blue-violet;
-        color: white;
-        font-weight: bold;
-      }
-    }
-  }
 }
 
 @media (min-width: 576px) {
