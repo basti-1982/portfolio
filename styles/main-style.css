@@ -182,7 +182,7 @@ main {
   width: 100%;
   align-self: center;
   border-radius: 10px 10px 0 0;
-  background-image: url("/pictures/tisch.jpg");
+  background-image: url("../pictures/tisch.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
