@@ -182,7 +182,7 @@ main {
   width: 100%;
   align-self: center;
   border-radius: 10px 10px 0 0;
-  background-image: url("/picture/tisch.jpg");
+  background-image: url("/pictures/tisch.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -396,13 +396,13 @@ main {
   .p_text {
     font-size: 24px;
   }
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 @media (min-width: 992px) {
   header span {
     font-size: 44px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
