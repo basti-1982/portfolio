@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap");
-// Roboto Mono, Teko, Josefin Sans
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap');
+// Roboto Mono, Teko, Josefin Sans, Great Vibes, Dancing Script
 
 @import "colors";
 @import "header";
@@ -133,7 +133,12 @@ main {
 
 .projects {
   background-color: $amber;
-  width: 100%;
+
+  .projects__banner {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .projects__heading {
     padding-top: 150px;
@@ -244,7 +249,7 @@ main {
   }
 
   .dropdown__list li {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .dropdown {
@@ -293,5 +298,11 @@ main {
 
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  header span {
+    font-size: 44px;
   }
 }

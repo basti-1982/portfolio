@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap");
 /* SCSS HEX */
 /* SCSS HSL */
 /* SCSS RGB */
@@ -57,7 +57,8 @@ header .dropdown:hover .dropdown-content {
   display: block;
 }
 header span {
-  font-size: 26px;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 30px;
   color: white;
 }
 
@@ -256,7 +257,11 @@ main {
 
 .projects {
   background-color: rgb(255, 190, 11);
-  width: 100%;
+}
+.projects .projects__banner {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .projects .projects__heading {
   padding-top: 150px;
@@ -355,7 +360,7 @@ main {
     display: flex;
   }
   .dropdown__list li {
-    font-size: 20px;
+    font-size: 18px;
   }
   .dropdown {
     display: none;
@@ -393,6 +398,11 @@ main {
   }
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  header span {
+    font-size: 44px;
   }
 }
 
